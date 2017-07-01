@@ -5,3 +5,12 @@ CMakeFiles*/
 BulletConfig.cmake
 CMakeCache.txt
 *.cmake
+*.tlog
+*.obj
+*.pdb
+*.exe
+[Dd]ebug*/
+data*/
+buildMT/examples/SharedMemory/openvr64pi.dll
+buildMT/BULLET_PHYSICS.VC.db
+buildMT/BULLET_PHYSICS.VC.VC.opendb
