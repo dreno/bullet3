@@ -1,3 +1,7 @@
 /bin
 /build3/gmake
 /build_cmake/
+CMakeFiles*/
+BulletConfig.cmake
+CMakeCache.txt
+*.cmake

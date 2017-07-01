@@ -1,0 +1,292 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{BC2FFE6E-E545-4728-87FC-B1F4DAEA6D1E}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\dev\bullet3B\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/dev/bullet3B/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HC:/dev/bullet3B -BC:/dev/bullet3B/buildMT --check-stamp-file C:\dev\bullet3B\buildMT\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/dev/bullet3B/CMakeLists.txt;C:\dev\bullet3B\CMakeLists.txt;C:\dev\bullet3B\buildMT\CMakeFiles\3.3.0-rc2\CMakeSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeSystemSpecificInitialize.cmake;C:\dev\bullet3B\buildMT\CMakeFiles\3.3.0-rc2\CMakeCCompiler.cmake;C:\dev\bullet3B\buildMT\CMakeFiles\3.3.0-rc2\CMakeCXXCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\Windows.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\Windows-MSVC.cmake;C:\dev\bullet3B\buildMT\CMakeFiles\3.3.0-rc2\CMakeRCCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindOpenGL.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPythonInterp.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;C:\dev\bullet3B\build3\cmake\FindPythonLibs.cmake;C:\dev\bullet3B\build3\cmake\SelectLibraryConfigurations.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;C:\dev\bullet3B\BulletConfig.cmake.in;C:\dev\bullet3B\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\dev\bullet3B\buildMT\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/dev/bullet3B/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HC:/dev/bullet3B -BC:/dev/bullet3B/buildMT --check-stamp-file C:\dev\bullet3B\buildMT\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/dev/bullet3B/CMakeLists.txt;C:\dev\bullet3B\CMakeLists.txt;C:\dev\bullet3B\buildMT\CMakeFiles\3.3.0-rc2\CMakeSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeSystemSpecificInitialize.cmake;C:\dev\bullet3B\buildMT\CMakeFiles\3.3.0-rc2\CMakeCCompiler.cmake;C:\dev\bullet3B\buildMT\CMakeFiles\3.3.0-rc2\CMakeCXXCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\Windows.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\Windows-MSVC.cmake;C:\dev\bullet3B\buildMT\CMakeFiles\3.3.0-rc2\CMakeRCCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindOpenGL.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPythonInterp.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;C:\dev\bullet3B\build3\cmake\FindPythonLibs.cmake;C:\dev\bullet3B\build3\cmake\SelectLibraryConfigurations.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;C:\dev\bullet3B\BulletConfig.cmake.in;C:\dev\bullet3B\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\dev\bullet3B\buildMT\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/dev/bullet3B/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HC:/dev/bullet3B -BC:/dev/bullet3B/buildMT --check-stamp-file C:\dev\bullet3B\buildMT\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/dev/bullet3B/CMakeLists.txt;C:\dev\bullet3B\CMakeLists.txt;C:\dev\bullet3B\buildMT\CMakeFiles\3.3.0-rc2\CMakeSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeSystemSpecificInitialize.cmake;C:\dev\bullet3B\buildMT\CMakeFiles\3.3.0-rc2\CMakeCCompiler.cmake;C:\dev\bullet3B\buildMT\CMakeFiles\3.3.0-rc2\CMakeCXXCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\Windows.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\Windows-MSVC.cmake;C:\dev\bullet3B\buildMT\CMakeFiles\3.3.0-rc2\CMakeRCCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindOpenGL.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPythonInterp.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;C:\dev\bullet3B\build3\cmake\FindPythonLibs.cmake;C:\dev\bullet3B\build3\cmake\SelectLibraryConfigurations.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;C:\dev\bullet3B\BulletConfig.cmake.in;C:\dev\bullet3B\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\dev\bullet3B\buildMT\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/dev/bullet3B/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HC:/dev/bullet3B -BC:/dev/bullet3B/buildMT --check-stamp-file C:\dev\bullet3B\buildMT\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/dev/bullet3B/CMakeLists.txt;C:\dev\bullet3B\CMakeLists.txt;C:\dev\bullet3B\buildMT\CMakeFiles\3.3.0-rc2\CMakeSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeSystemSpecificInitialize.cmake;C:\dev\bullet3B\buildMT\CMakeFiles\3.3.0-rc2\CMakeCCompiler.cmake;C:\dev\bullet3B\buildMT\CMakeFiles\3.3.0-rc2\CMakeCXXCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\Windows.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\Windows-MSVC.cmake;C:\dev\bullet3B\buildMT\CMakeFiles\3.3.0-rc2\CMakeRCCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindOpenGL.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPythonInterp.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;C:\dev\bullet3B\build3\cmake\FindPythonLibs.cmake;C:\dev\bullet3B\build3\cmake\SelectLibraryConfigurations.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;C:\dev\bullet3B\BulletConfig.cmake.in;C:\dev\bullet3B\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\dev\bullet3B\buildMT\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:/dev/bullet3B/buildMT/examples/BasicDemo/AppBasicExampleGui.vcxproj">
+      <Project>CAC6D52D-AB5E-4F62-8830-E11D2CA641A7</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/bullet3B/buildMT/examples/BasicDemo/App_BasicExample.vcxproj">
+      <Project>E3EAC8DE-F470-4B16-91D0-BF84900B2C9D</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/bullet3B/buildMT/examples/ExampleBrowser/App_ExampleBrowser.vcxproj">
+      <Project>C03B749B-B9B9-4F1E-B602-4E62FF6D07C3</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/bullet3B/buildMT/examples/HelloWorld/App_HelloWorld.vcxproj">
+      <Project>273C8823-BAAD-4C70-B167-5488FDE78D4B</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/bullet3B/buildMT/examples/SharedMemory/App_PhysicsServer_SharedMemory.vcxproj">
+      <Project>606C0496-411D-4676-B54C-F1CE6D1AEA94</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/bullet3B/buildMT/examples/SharedMemory/App_PhysicsServer_SharedMemory_GUI.vcxproj">
+      <Project>DEE6D94E-8595-4598-871B-5BE21595BC87</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/bullet3B/buildMT/examples/SharedMemory/App_PhysicsServer_SharedMemory_VR.vcxproj">
+      <Project>2360B2B2-5B10-47CD-9E3B-4564871F810A</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/bullet3B/buildMT/examples/RobotSimulator/App_RobotSimulator.vcxproj">
+      <Project>2B616E05-CB05-4B21-AD06-8097C79DAAC3</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/bullet3B/buildMT/Extras/obj2sdf/App_obj2sdf.vcxproj">
+      <Project>D433363C-84BC-4C1D-9181-535807FF1181</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/bullet3B/buildMT/src/Bullet3Serialize/Bullet2FileLoader/Bullet2FileLoader.vcxproj">
+      <Project>0E42AC13-782A-4E6E-B769-456AD8E86733</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/bullet3B/buildMT/src/Bullet3Collision/Bullet3Collision.vcxproj">
+      <Project>FA8F4B00-E304-4947-96C8-D505D8E07692</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/bullet3B/buildMT/src/Bullet3Common/Bullet3Common.vcxproj">
+      <Project>97A0719F-3682-4B8D-9104-9EB079D3E6C7</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/bullet3B/buildMT/src/Bullet3Dynamics/Bullet3Dynamics.vcxproj">
+      <Project>C5342CF5-B9FC-4EFC-8D49-AAF963E8D55A</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/bullet3B/buildMT/src/Bullet3Geometry/Bullet3Geometry.vcxproj">
+      <Project>FCB09172-64FE-4BE5-8A99-39882B17787F</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/bullet3B/buildMT/src/Bullet3OpenCL/Bullet3OpenCL_clew.vcxproj">
+      <Project>436B29BB-C750-4FC3-A863-1C5BF2B3264C</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/bullet3B/buildMT/src/BulletCollision/BulletCollision.vcxproj">
+      <Project>82C7CDDD-42E7-4B2A-8125-39D576368ECC</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/bullet3B/buildMT/src/BulletDynamics/BulletDynamics.vcxproj">
+      <Project>5982EC21-EB5F-46DB-958D-29C331A85CD5</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/bullet3B/buildMT/examples/ExampleBrowser/BulletExampleBrowserLib.vcxproj">
+      <Project>DE9B3D05-8F15-4868-82F2-65C1B4167CB8</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/bullet3B/buildMT/Extras/Serialize/BulletFileLoader/BulletFileLoader.vcxproj">
+      <Project>41F8EE83-AC5E-4DAF-A446-C2019F075D11</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/bullet3B/buildMT/src/BulletInverseDynamics/BulletInverseDynamics.vcxproj">
+      <Project>EAE32B89-F06E-4103-B61C-35CDEC7EF0F6</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/bullet3B/buildMT/Extras/InverseDynamics/BulletInverseDynamicsUtils.vcxproj">
+      <Project>004E059E-E20C-49B0-B2D1-C9A4BC2FE1FB</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/bullet3B/buildMT/src/BulletSoftBody/BulletSoftBody.vcxproj">
+      <Project>BDDF16C9-0563-4B6E-BF91-87697F7514CE</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/bullet3B/buildMT/Extras/Serialize/BulletWorldImporter/BulletWorldImporter.vcxproj">
+      <Project>6FBF80C9-9575-4E24-B2A7-AE007385C9F8</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/bullet3B/buildMT/Extras/Serialize/BulletXmlWorldImporter/BulletXmlWorldImporter.vcxproj">
+      <Project>46244277-855A-41D5-8C10-707D74DF4C2C</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/bullet3B/buildMT/examples/ThirdPartyLibs/BussIK/BussIK.vcxproj">
+      <Project>502E4793-1B3D-4ACE-861D-2415972CCAFA</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/bullet3B/buildMT/Extras/ConvexDecomposition/ConvexDecomposition.vcxproj">
+      <Project>6F113BD6-3567-43AA-A779-B9E2DE96209E</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/bullet3B/buildMT/Extras/GIMPACTUtils/GIMPACTUtils.vcxproj">
+      <Project>8D3207C5-2BB4-44E4-9E0B-0C86506A8D7E</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/bullet3B/buildMT/Extras/HACD/HACD.vcxproj">
+      <Project>FF91B6DE-6998-47F6-86A6-E2BA7B9423EC</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/bullet3B/buildMT/src/LinearMath/LinearMath.vcxproj">
+      <Project>40B1F77A-FF09-482E-9830-7392BE8DD8BB</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/bullet3B/buildMT/examples/OpenGLWindow/OpenGLWindow.vcxproj">
+      <Project>96FCB6AF-B4F0-43F4-8CC3-E403EC8DA2AB</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/bullet3B/buildMT/test/BulletDynamics/pendulum/Test_BulletDynamics.vcxproj">
+      <Project>66162A73-2127-456A-B89A-FC2782F16FCE</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/bullet3B/buildMT/test/InverseDynamics/Test_BulletInverseDynamics.vcxproj">
+      <Project>AD88064D-3B22-4148-96BF-A845D7295FB7</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/bullet3B/buildMT/test/InverseDynamics/Test_BulletInverseDynamicsJacobian.vcxproj">
+      <Project>444B53E0-22E2-4294-A430-37DA2223B0B4</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/bullet3B/buildMT/test/InverseDynamics/Test_BulletInverseForwardDynamics.vcxproj">
+      <Project>B2A71ED6-4420-49A9-AB86-06747B0AE010</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/bullet3B/buildMT/test/collision/Test_Collision.vcxproj">
+      <Project>DC07AE30-36E0-4F64-8A68-9C08EE9B2C44</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/bullet3B/buildMT/test/SharedMemory/Test_PhysicsClientServer.vcxproj">
+      <Project>59BA794E-92A4-4226-80FA-4F3A45F05C23</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/bullet3B/buildMT/test/BulletDynamics/Test_btKinematicCharacterController.vcxproj">
+      <Project>752F08A7-99FA-4577-A613-92FDA7BC3B40</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/bullet3B/buildMT/ZERO_CHECK.vcxproj">
+      <Project>F6719ED5-6E9D-48C0-A433-92960A560E61</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/bullet3B/buildMT/examples/ThirdPartyLibs/clsocket/clsocket.vcxproj">
+      <Project>E5372154-B016-40C9-9131-59893B786730</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/bullet3B/buildMT/test/gtest-1.7.0/gtest.vcxproj">
+      <Project>3215F753-1E91-4F5F-894C-CF5A6B078E1A</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/dev/bullet3B/buildMT/examples/ThirdPartyLibs/Gwen/gwen.vcxproj">
+      <Project>391F9D73-419B-49D1-8C98-10FBBEC59C96</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
